@@ -2,9 +2,6 @@
 	font-family: Cabin;
 }
 
-img.nav-brand {
-	border: 1px solid black;
-}
 .icon-img {
 	margin-right: 10px;
 }
@@ -14,9 +11,22 @@ a:link, a:visited{
 	text-decoration: underline;
 	text-underline-position: under;
 }
+
 ul.nav a:hover {
 	color: turquoise; 
 	outline: 1px solid turquoise;
 	text-decoration: underline;
 	text-underline-position: under;
 }
+
+.navbar {
+	display: fixed;
+}
+
+#home {
+	padding: 10%;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 50px;
