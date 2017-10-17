@@ -2,23 +2,21 @@
 	font-family: Cabin;
 }
 
+img.nav-brand {
+	border: 1px solid black;
+}
 .icon-img {
 	margin-right: 10px;
-	border-radius: 4px;
 }
 
-a:link {
-	color: white;
-}
-a:visited {
-	color: white;
+a:link, a:visited{
+	color: black;
+	text-decoration: underline;
+	text-underline-position: under;
 }
 ul.nav a:hover {
-	color: pink; 
-	outline: 1px solid pink;
-}
-
-.navbar {
-	border-bottom-right-radius: 8px;
-	border-bottom-left-radius: 8px;
+	color: turquoise; 
+	outline: 1px solid turquoise;
+	text-decoration: underline;
+	text-underline-position: under;
 }
