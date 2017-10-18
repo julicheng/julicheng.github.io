@@ -2,10 +2,6 @@
 	font-family: Cabin;
 }
 
-.icon-img {
-	margin-right: 10px;
-}
-
 a:link, a:visited{
 	color: black;
 	text-decoration: underline;
@@ -19,14 +15,94 @@ ul.nav a:hover {
 	text-underline-position: under;
 }
 
-.navbar {
-	display: fixed;
+a:hover {
+	color: turquoise;
 }
 
-#home {
-	padding: 10%;
-	height: 100vh;
+h1 span{
+	color: turquoise;
 }
 
 h1 {
+	font-size: 60px;
+}
+
+h2 {
 	font-size: 50px;
+	text-align: center;
+}
+
+.intro-para {
+	padding: 1% 10%;
+}
+.icon-img {
+	margin-right: 10px;
+}
+
+.project-img {
+	padding: 0.5% 3%;
+	margin: center;
+}
+
+#home {
+	padding: 13% 12%;
+	height: 100vh;
+}
+
+#skills {
+	height: 100vh;
+}
+
+#projects {
+	height: 100vh;
+}
+
+#contact {
+	height: 100vh;
+}
+
+.project-info {
+	margin-top: 7%;
+	text-align: center;
+}
+
+.section-title {
+	padding: 2% 0%;
+	text-align: center;
+}
+
+hr {  
+  border: none;
+  height: 10px;
+  background: linear-gradient(-135deg, #fff 5px, transparent 0) 0 5px, linear-gradient(135deg, #fff 5px, #8c8c8c 0) 0 5px;
+  background-color: #fff;
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 10px 10px;
+  padding: 1% 0%;
+}
+
+.fa-5x {
+	font-size: 13em;
+	text-align: center;
+	width: 100%;
+	padding: 5%;
+}
+
+.fa-4x {
+	color: turquoise;
+}
+
+.fa-3x {
+	font-size: 8em;
+}
+
+.contact-icon {
+	text-align: center;
+	width: 100%;
+	padding: 1% 1%;
+}
+
+footer {
+	text-align: center;
+}
