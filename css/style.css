@@ -2,10 +2,12 @@
 	font-family: Cabin;
 }
 
+
 .navbar {
-	margin: 0 10%;
+	margin: 0 5%;
 	background-color: white;
 	border-bottom: 2px solid turquoise;
+	opacity: 0.9;
 }
 
 ul.nav a:link, ul.nav a:visited {
@@ -55,10 +57,10 @@ h2 {
 
 #home {
 	padding: 15% 12%;
-	height: 100vh;
+	/*height: 100vh;*/
 }
 
-#skills {
+/*#skills {
 	height: 100vh;
 }
 
@@ -68,7 +70,7 @@ h2 {
 
 #contact {
 	height: 100vh;
-}
+}*/
 
 .project-img img {
 	width: 100%;
