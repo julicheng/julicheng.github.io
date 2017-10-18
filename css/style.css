@@ -2,7 +2,13 @@
 	font-family: Cabin;
 }
 
-a:link, a:visited{
+.navbar {
+	margin: 0 10%;
+	background-color: white;
+	border-bottom: 2px solid turquoise;
+}
+
+ul.nav a:link, ul.nav a:visited {
 	color: black;
 	text-decoration: underline;
 	text-underline-position: under;
@@ -15,8 +21,16 @@ ul.nav a:hover {
 	text-underline-position: under;
 }
 
+a:link, a:visited {
+	color: black;
+}
+
 a:hover {
 	color: turquoise;
+}
+
+.project-img a:hover {
+	outline: 2px solid turquoise;
 }
 
 h1 span{
@@ -39,13 +53,8 @@ h2 {
 	margin-right: 10px;
 }
 
-.project-img {
-	padding: 0.5% 3%;
-	margin: center;
-}
-
 #home {
-	padding: 13% 12%;
+	padding: 15% 12%;
 	height: 100vh;
 }
 
@@ -61,13 +70,18 @@ h2 {
 	height: 100vh;
 }
 
+.project-img img {
+	width: 100%;
+}
+
 .project-info {
-	margin-top: 7%;
+	margin-top: 4%;
+	margin-bottom: 4%;
 	text-align: center;
 }
 
 .section-title {
-	padding: 2% 0%;
+	padding: 8% 0 2% 0;
 	text-align: center;
 }
 
@@ -91,6 +105,8 @@ hr {
 
 .fa-4x {
 	color: turquoise;
+	text-align: center;
+	width: 100%;
 }
 
 .fa-3x {
@@ -105,4 +121,5 @@ hr {
 
 footer {
 	text-align: center;
+	padding-top: 6%;
 }
