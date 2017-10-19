@@ -2,6 +2,13 @@
 	font-family: Cabin;
 }
 
+a:link, a:visited {
+	color: black;
+}
+
+a:hover {
+	color: turquoise;
+}
 
 .navbar {
 	margin: 0 5%;
@@ -10,25 +17,17 @@
 	opacity: 0.9;
 }
 
-ul.nav a:link, ul.nav a:visited {
+li.nav-item a:link, li.nav-item a:visited {
 	color: black;
 	text-decoration: underline;
 	text-underline-position: under;
 }
 
-ul.nav a:hover {
+li.nav-item a:hover {
 	color: turquoise; 
 	outline: 1px solid turquoise;
 	text-decoration: underline;
 	text-underline-position: under;
-}
-
-a:link, a:visited {
-	color: black;
-}
-
-a:hover {
-	color: turquoise;
 }
 
 .project-img a:hover {

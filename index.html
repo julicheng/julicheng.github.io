@@ -3,18 +3,19 @@
 <head>
 	<title>Juli Cheng</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	 <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="logo.png" />
 	<!-- bootstrap before custom stylesheet -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </head>
 <body>
 
 	<div class="container">
-		<!-- navbar -->
-		<nav class="navbar fixed-top">
+		<!-- old navbar -->
+		<!-- <nav class="navbar fixed-top navbar-toggler">
 	  		<a class="navbar-brand" href="#">
 	    	<img src="logo.png" width="30" height="30" class="icon-img d-inline-block align-top" alt="logo">
 			</a>
@@ -32,6 +33,35 @@
 					<a class="nav-link" href="https://juliscodingadventure.wordpress.com/" target="_blank">Blog</a>
 				</li>
 			</ul>
+		</nav> 
+		old navbar end -->
+
+
+		<!-- nav bar start -->
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<!-- logo -->
+		  <a class="navbar-brand" href="#"><img src="logo.png" width="30" height="30" class="icon-img d-inline-block align-top" alt="logo"></a>
+		  <!-- hamburger button -->
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+		    <i class="fa fa-bars" aria-hidden="true"></i>
+		  </button>
+
+		  <div class="collapse navbar-collapse navbar-right" id="navbarTogglerDemo02">
+		    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 justify-content-end">
+		      <li class="nav-item">
+		        <a class="nav-link" href="#home">Home</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#projects">Projects</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#contact">Contact</a>
+		      </li>
+		      <li class="nav-item">
+				<a class="nav-link" href="https://juliscodingadventure.wordpress.com/" target="_blank">Blog</a>
+				</li>
+		    </ul>
+		  </div>
 		</nav>
 		<!-- navbar end -->
 
@@ -140,6 +170,6 @@
 	</section>
 		<!-- contact end -->
 	</div>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 </html>
