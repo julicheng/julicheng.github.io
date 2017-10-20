@@ -17,6 +17,10 @@ a:hover {
 	opacity: 0.9;
 }
 
+.navbar-nav {
+	width: 100%;
+}
+
 li.nav-item a:link, li.nav-item a:visited {
 	color: black;
 	text-decoration: underline;
