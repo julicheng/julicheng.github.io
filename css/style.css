@@ -1,99 +1,88 @@
 * {
-	font-family: Cabin;
+  font-family: Rubik;
 }
 
-a:link, a:visited {
-	color: black;
+a:link,
+a:visited {
+  color: black;
+}
+
+.navbar-nav a:link {
+  margin-left: 25px;
 }
 
 a:hover {
-	color: turquoise;
+  color: #9ea9f0;
 }
 
 .navbar {
-	margin: 0 5%;
-	background-color: white;
-	border-bottom: 2px solid turquoise;
-	opacity: 0.9;
+  background-color: white;
+  opacity: 0.9;
+  padding: 15px 300px;
 }
 
 .navbar-nav {
-	width: 100%;
+  width: 100%;
 }
 
-li.nav-item a:link, li.nav-item a:visited {
-	color: black;
-	text-decoration: underline;
-	text-underline-position: under;
+li.nav-item a:link,
+li.nav-item a:visited {
+  color: black;
 }
 
 li.nav-item a:hover {
-	color: turquoise; 
-	outline: 1px solid turquoise;
-	text-decoration: underline;
-	text-underline-position: under;
+  color: #9ea9f0;
 }
 
 .project-img a:hover {
-	outline: 2px solid turquoise;
+  /* outline: 2px solid #9ea9f0; */
 }
 
-h1 span{
-	color: turquoise;
+.name {
+  color: #9ea9f0;
 }
 
 h1 {
-	font-size: 60px;
+  font-size: 50px;
 }
 
 h2 {
-	font-size: 50px;
-	text-align: center;
+  font-size: 28px;
+  text-align: left;
 }
 
 .intro-para {
-	padding: 1% 10%;
+  padding: 1% 10%;
 }
 .icon-img {
-	margin-right: 10px;
+  margin-right: 10px;
 }
 
 #home {
-	padding: 15% 12% 0%;
-	/*height: 100vh;*/
+  padding: 18% 16% 5%;
 }
-
-/*#skills {
-	height: 100vh;
-}
-
-#projects {
-	height: 100vh;
-}
-
-#contact {
-	height: 100vh;
-}*/
-
 .project-img img {
-	width: 100%;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 25px;
 }
 
 .project-info {
-	margin-top: 4%;
-	margin-bottom: 4%;
-	text-align: center;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  text-align: center;
 }
 
 .section-title {
-	padding: 8% 0 2% 0;
-	text-align: center;
+  padding: 8% 0 2% 0;
+  text-align: center;
 }
 
-hr {  
+hr {
   border: none;
   height: 10px;
-  background: linear-gradient(-135deg, #fff 5px, transparent 0) 0 5px, linear-gradient(135deg, #fff 5px, #8c8c8c 0) 0 5px;
+  background: linear-gradient(-135deg, #fff 5px, transparent 0) 0 5px,
+    linear-gradient(135deg, #fff 5px, #8c8c8c 0) 0 5px;
   background-color: #fff;
   background-position: left bottom;
   background-repeat: repeat-x;
@@ -102,29 +91,29 @@ hr {
 }
 
 .fa-5x {
-	font-size: 13em;
-	text-align: center;
-	width: 100%;
-	padding: 5%;
+  font-size: 13em;
+  text-align: center;
+  width: 100%;
+  padding: 5%;
 }
 
 .fa-4x {
-	color: turquoise;
-	text-align: center;
-	width: 100%;
+  color: #9ea9f0;
+  text-align: center;
+  width: 100%;
 }
 
 .fa-3x {
-	font-size: 8em;
+  font-size: 8em;
 }
 
 .contact-icon {
-	text-align: center;
-	width: 100%;
-	padding: 1% 1%;
+  text-align: center;
+  width: 100%;
+  padding: 1% 1%;
 }
 
 footer {
-	text-align: center;
-	padding-top: 6%;
+  text-align: center;
+  padding-top: 6%;
 }
