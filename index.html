@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Juli Cheng - Front-End Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
     <!-- bootstrap before custom stylesheet -->
     <link
       rel="stylesheet"
@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -72,9 +72,7 @@
             hi, the name's <span class="name">&#60;juli cheng /&#62;</span> and
             i'm a front-end developer <span class="smiley">:-)</span>
           </h1>
-          <!-- <p class="intro-para">
-            Web Developer
-          </p> -->
+          <a href="#projects"><i class="fas fa-arrow-down"></i></a>
         </div>
       </div>
       <!-- home section end -->
@@ -93,46 +91,56 @@
           <!-- projects -->
           <div class="row">
             <div class="col-md-4 col-sm-6 project-img">
-              <a href="#"
-                ><img
-                  src="http://via.placeholder.com/300x200"
-                  alt="project image"
-              /></a>
+              <div>
+                <div class="project-info">
+                  <a
+                    href="https://github.com/julicheng/neighbourhood-map-react"
+                    target="_blank"
+                    ><h3>Neighbourhood Map</h3></a
+                  >
+                  <p>React, JavaScript, CSS, HTML</p>
+                </div>
+                <img src="images/neighbourhoodmap.jpg" alt="matching game" />
+              </div>
             </div>
             <div class="col-md-4 col-sm-6 project-img">
-              <a href="#"
-                ><img
-                  src="http://via.placeholder.com/300x200"
-                  alt="project image"
-              /></a>
+              <div class="project-info">
+                <a
+                  href="https://github.com/julicheng/memory-game"
+                  target="_blank"
+                  ><h3>Matching Game</h3></a
+                >
+                <p>JavaScript, CSS, HTML</p>
+              </div>
+              <img src="images/matchinggame.jpg" alt="project image" />
             </div>
             <div class="col-md-4 col-sm-6 project-img">
-              <a href="#"
-                ><img
-                  src="http://via.placeholder.com/300x200"
-                  alt="project image"
-              /></a>
+              <div class="project-info">
+                <h3>Pink Gallery</h3>
+                <p>CSS, HTML</p>
+              </div>
+              <img src="images/pinkgallery.jpg" alt="project image" />
             </div>
             <div class="col-md-4 col-sm-6 project-img">
-              <a href="#"
-                ><img
-                  src="http://via.placeholder.com/300x200"
-                  alt="project image"
-              /></a>
+              <div class="project-info">
+                <h3>Animal Trading Card</h3>
+                <p>CSS, HTML</p>
+              </div>
+              <img src="images/animaltradingcard.jpg" alt="project image" />
             </div>
             <div class="col-md-4 col-sm-6 project-img">
-              <a href="#"
-                ><img
-                  src="http://via.placeholder.com/300x200"
-                  alt="project image"
-              /></a>
+              <div class="project-info">
+                <h3>Text Editor</h3>
+                <p>JavaScript, CSS, HTML</p>
+              </div>
+              <img src="images/texteditor.jpg" alt="project image" />
             </div>
             <div class="col-md-4 col-sm-6 project-img">
-              <a href="#"
-                ><img
-                  src="http://via.placeholder.com/300x200"
-                  alt="project image"
-              /></a>
+              <div class="project-info">
+                <h3>Arcade Game</h3>
+                <p>JavaScript, CSS, HTML</p>
+              </div>
+              <img src="images/arcadegame.jpg" alt="project image" />
             </div>
           </div>
         </div>
@@ -158,24 +166,7 @@
             </div>
           </div>
           <!-- contact bits -->
-          <div class="row">
-            <div class="col-md-4 col-sm-6 fa-3x contact-icon">
-              <a href="https://github.com/julicheng" target="_blank"
-                ><i class="fa fa-github" aria-hidden="true"></i
-              ></a>
-              <p></p>
-            </div>
-            <div class="col-md-4 col-sm-6 fa-3x contact-icon">
-              <a href="https://codepen.io/julicheng/" target="_blank"
-                ><i class="fa fa-codepen" aria-hidden="true"></i
-              ></a>
-            </div>
-            <div class="col-md-4 col-sm-6 fa-3x contact-icon">
-              <a href="https://uk.linkedin.com/in/julicheng" target="_blank"
-                ><i class="fa fa-linkedin" aria-hidden="true"></i
-              ></a>
-            </div>
-          </div>
+          <div class="row"></div>
           <footer><h6>Juli Cheng © 2019</h6></footer>
         </div>
       </section>
@@ -186,6 +177,6 @@
       integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

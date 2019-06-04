@@ -5,6 +5,7 @@
 a:link,
 a:visited {
   color: black;
+  text-decoration: none;
 }
 
 .navbar-nav a:link {
@@ -34,8 +35,9 @@ li.nav-item a:hover {
   color: #9ea9f0;
 }
 
-.project-img a:hover {
-  /* outline: 2px solid #9ea9f0; */
+.project-img img:hover {
+  box-shadow: 0 4px 8px 0 #9ea9f0, 0 6px 20px 0 #9ea9f0;
+  opacity: 0.4;
 }
 
 .name {
@@ -60,22 +62,25 @@ h2 {
 
 #home {
   padding: 18% 16% 5%;
+  height: 100vh;
 }
 .project-img img {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.4;
 }
 
-.project-info {
+/* .project-info {
   margin-top: 4%;
   margin-bottom: 4%;
   text-align: center;
-}
+} */
 
 .section-title {
   padding: 8% 0 2% 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 hr {
@@ -90,25 +95,7 @@ hr {
   padding: 1% 0%;
 }
 
-.fa-5x {
-  font-size: 13em;
-  text-align: center;
-  width: 100%;
-  padding: 5%;
-}
-
-.fa-4x {
-  color: #9ea9f0;
-  text-align: center;
-  width: 100%;
-}
-
-.fa-3x {
-  font-size: 8em;
-}
-
 .contact-icon {
-  text-align: center;
   width: 100%;
   padding: 1% 1%;
 }
@@ -116,4 +103,25 @@ hr {
 footer {
   text-align: center;
   padding-top: 6%;
+}
+
+iframe {
+  width: 300px;
+  height: 200px;
+}
+
+.project-info {
+  position: absolute;
+  z-index: 999;
+  padding: 30px;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.fa-arrow-down {
+  font-size: 35px;
+  display: block;
+  text-align: center;
 }
