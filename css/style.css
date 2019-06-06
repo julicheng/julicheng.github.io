@@ -19,7 +19,7 @@ a:hover {
 .navbar {
   background-color: white;
   opacity: 0.9;
-  padding: 15px 300px;
+  padding: 10px 20px;
 }
 
 .navbar-nav {
@@ -65,36 +65,18 @@ h2 {
   height: 100vh;
 }
 .project-img img {
-  width: 100%;
+  /* width: 100%; */
   border-radius: 10px;
-  margin-bottom: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  opacity: 0.4;
+  opacity: 0.8;
+  width: 320px;
+  height: 213px;
 }
-
-/* .project-info {
-  margin-top: 4%;
-  margin-bottom: 4%;
-  text-align: center;
-} */
 
 .section-title {
   padding: 8% 0 2% 0;
   /* text-align: center; */
 }
-
-hr {
-  border: none;
-  height: 10px;
-  background: linear-gradient(-135deg, #fff 5px, transparent 0) 0 5px,
-    linear-gradient(135deg, #fff 5px, #8c8c8c 0) 0 5px;
-  background-color: #fff;
-  background-position: left bottom;
-  background-repeat: repeat-x;
-  background-size: 10px 10px;
-  padding: 1% 0%;
-}
-
 .contact-icon {
   width: 100%;
   padding: 1% 1%;
@@ -105,15 +87,11 @@ footer {
   padding-top: 6%;
 }
 
-iframe {
-  width: 300px;
-  height: 200px;
-}
-
 .project-info {
   position: absolute;
   z-index: 999;
   padding: 30px;
+  opacity: 0;
 }
 .down {
   transform: rotate(45deg);
@@ -124,4 +102,57 @@ iframe {
   font-size: 35px;
   display: block;
   text-align: center;
+}
+
+small {
+  display: block;
+  /* color: white; */
+}
+
+.project-info {
+  opacity: 0;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 #9ea9f0, 0 6px 20px 0 #9ea9f0;
+  width: 320px;
+  height: 213px;
+}
+
+.project-info:hover {
+  opacity: 1;
+}
+
+/* .project-img {
+  width: 150px;
+  height: 200px;
+  padding: 0;
+  margin: 0 15px;
+} */
+
+/* .project-card {
+  width: 300px;
+  height: 200px;
+} */
+
+.project-img {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .project-info {
+    width: 300px;
+    height: 200px;
+  }
+
+  .project-img img {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1680px) {
+  .navbar {
+    padding: 15px 300px;
+  }
 }
