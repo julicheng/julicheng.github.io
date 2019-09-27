@@ -194,16 +194,27 @@ h1::before {
   }
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   .project {
     width: 100%;
   }
-}
+} */
 
 .project {
-  border: 1px solid lavender;
+  margin: 8px;
 }
 
 .project img {
-  width: 100%;
+  /* width: 100%; */
+  /* border: 1px solid lavender; */
+  border-radius: 10px;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3),
+    0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
+  opacity: 0.4;
+}
+
+.project-title {
+  position: absolute;
+  padding: 20px;
+  z-index: 9999;
 }
