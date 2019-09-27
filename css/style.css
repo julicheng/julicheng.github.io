@@ -25,6 +25,7 @@ a:hover {
 
 .navbar-nav {
   width: 100%;
+  text-align: right;
 }
 
 li.nav-item a:link,
@@ -63,7 +64,13 @@ h2 {
 
 #home {
   padding: 18% 16% 5%;
+  background: lavender;
 }
+
+#about {
+  /* padding: 15px 300px; */
+}
+
 .project-img img {
   /* width: 100%; */
   border-radius: 10px;
@@ -73,8 +80,12 @@ h2 {
   height: 213px;
 }
 
+section {
+  padding: 15px 300px;
+}
+
 .section-title {
-  padding: 8% 0 2% 0;
+  padding-top: 30px;
   /* text-align: center; */
 }
 .contact-icon {
@@ -84,7 +95,7 @@ h2 {
 
 footer {
   text-align: center;
-  padding-top: 6%;
+  /* padding-top: 6%; */
 }
 
 .project-info {
@@ -162,7 +173,8 @@ h1 {
   position: relative;
   max-width: 30em;
   background-color: #fff;
-  padding: 1.125em 1.5em;
+  margin-top: 20px;
+  padding: 1em;
   font-size: 2.25em;
   border-radius: 1rem;
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3),
