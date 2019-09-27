@@ -63,7 +63,7 @@ h2 {
 }
 
 #home {
-  padding: 18% 16% 5%;
+  padding: 12% 19% 8%;
   background: lavender;
 }
 
@@ -160,7 +160,7 @@ h1 {
   position: relative;
   max-width: 30em;
   background-color: #fff;
-  margin-top: 20px;
+  margin: 20px 0;
   padding: 1em;
   font-size: 2.25em;
   border-radius: 1rem;
@@ -173,13 +173,11 @@ h1::before {
   position: absolute;
   width: 0;
   height: 0;
-  bottom: 100%;
+  top: 100%;
   left: 1.5em;
   border: 0.75rem solid transparent;
-  border-top: none;
-
-  border-bottom-color: #fff;
-  filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+  border-bottom: none;
+  border-top-color: #fff;
 }
 
 .projects-box {
@@ -217,4 +215,13 @@ h1::before {
   position: absolute;
   padding: 20px;
   z-index: 9999;
+}
+
+@media (max-width: 900px) {
+  #home {
+    padding: 20% 19% 8%;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
 }
