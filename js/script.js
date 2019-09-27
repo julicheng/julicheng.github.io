@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $(".owl-carousel").owlCarousel({
+  let owlCarouselValues = {
     loop: true,
     margin: 20,
     responsiveClass: true,
@@ -19,5 +19,9 @@ $(document).ready(function() {
         loop: false
       }
     }
+  };
+  $(window).resize(function() {
+    $(".owl-carousel").owlCarousel(owlCarouselValues);
   });
+  $(".owl-carousel").owlCarousel(owlCarouselValues);
 });
