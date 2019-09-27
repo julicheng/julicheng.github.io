@@ -73,11 +73,11 @@ h2 {
 
 .project-img img {
   /* width: 100%; */
-  border-radius: 10px;
+  /* border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   opacity: 0.8;
   width: 320px;
-  height: 213px;
+  height: 213px; */
 }
 
 section {
@@ -85,7 +85,7 @@ section {
 }
 
 .section-title {
-  padding-top: 30px;
+  padding: 30px 0 20px 0;
   /* text-align: center; */
 }
 .contact-icon {
@@ -134,19 +134,6 @@ small {
 .project-info:hover {
   opacity: 1;
 }
-
-/* .project-img {
-  width: 150px;
-  height: 200px;
-  padding: 0;
-  margin: 0 15px;
-} */
-
-/* .project-card {
-  width: 300px;
-  height: 200px;
-} */
-
 .project-img {
   margin-bottom: 20px;
 }
@@ -193,4 +180,30 @@ h1::before {
 
   border-bottom-color: #fff;
   filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+}
+
+.projects-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 1120px) {
+  section {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .project {
+    width: 100%;
+  }
+}
+
+.project {
+  border: 1px solid lavender;
+}
+
+.project img {
+  width: 100%;
 }
