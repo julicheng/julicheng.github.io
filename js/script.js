@@ -1,22 +1,17 @@
 $(document).ready(function() {
   let owlCarouselValues = {
     loop: true,
-    margin: 20,
-    responsiveClass: true,
-    items: 3,
+    margin: 10,
+    nav: true,
     responsive: {
       0: {
-        items: 1,
-        nav: true
+        items: 1
       },
       600: {
-        items: 2,
-        nav: false
+        items: 2
       },
       1000: {
-        items: 3,
-        nav: true,
-        loop: false
+        items: 3
       }
     }
   };

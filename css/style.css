@@ -63,12 +63,23 @@ h2 {
 }
 
 #home {
-  padding: 12% 19% 8%;
+  padding: 12% 21% 8%;
   background: lavender;
+  /* height: 100vh; */
 }
 
 #about {
-  /* padding: 15px 300px; */
+  -webkit-background-clip: content-box;
+  background-clip: content-box;
+  position: relative;
+  max-width: 30em;
+  background-color: #fff;
+  margin: 50px auto;
+  padding: 1em;
+  font-size: 2.25em;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3),
+    0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
 }
 
 .project-img img {
@@ -224,4 +235,8 @@ h1::before {
   h1 {
     font-size: 1.5em;
   }
+}
+
+p {
+  font-size: 20px;
 }
