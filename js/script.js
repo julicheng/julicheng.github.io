@@ -1,4 +1,18 @@
 $(document).ready(function() {
+  var i = 0;
+  var txt = `Hello 👋🏼, the name's Juli Cheng and I'm a front-end developer! 😃`;
+  var speed = 70;
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.querySelector("h1").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  typeWriter();
+
   let owlCarouselValues = {
     loop: true,
     margin: 10,
