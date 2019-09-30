@@ -69,14 +69,14 @@ h2 {
   /* height: 100vh; */
 }
 
-#about {
+#about > div {
   background: lavender;
   -webkit-background-clip: content-box;
   background-clip: content-box;
   position: relative;
-  max-width: 30em;
+
   background-color: #fff;
-  margin: 50px auto;
+  /* margin: 50px auto; */
   padding: 1em;
   font-size: 2.25em;
   border-radius: 1rem;
