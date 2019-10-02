@@ -66,7 +66,7 @@ h2 {
 #home {
   padding: 12% 21% 8%;
   background: lavender;
-  /* height: 100vh; */
+  background-image: linear-gradient(lavender, white);
 }
 
 #about > div {
@@ -84,26 +84,13 @@ h2 {
     0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
 }
 
-.project-img img {
-  /* width: 100%; */
-  /* border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  opacity: 0.8;
-  width: 320px;
-  height: 213px; */
-}
-
-section {
+section > section {
   padding: 15px 300px;
 }
 
 .section-title {
   padding: 30px 0 20px 0;
   /* text-align: center; */
-}
-.contact-icon {
-  width: 100%;
-  padding: 1% 1%;
 }
 
 footer {
@@ -200,28 +187,19 @@ h1::before {
 }
 
 @media (max-width: 1120px) {
-  section {
+  section > section {
     padding: 15px 20px;
   }
 }
-
-/* @media (max-width: 500px) {
-  .project {
-    width: 100%;
-  }
-} */
 
 .project {
   margin: 8px;
 }
 
 .project img {
-  /* width: 100%; */
-  /* border: 1px solid lavender; */
   border-radius: 10px;
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3),
     0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
-  /* opacity: 0.4; */
 }
 
 .project-title {
@@ -241,4 +219,8 @@ h1::before {
 
 p {
   font-size: 20px;
+}
+
+.section-div {
+  padding-top: 70px;
 }
