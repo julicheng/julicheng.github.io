@@ -110,7 +110,7 @@ h2 {
 }
 
 .project-title {
-  position: absolute;
+  /* position: absolute; */
   padding: 20px;
   z-index: 9999;
 }
