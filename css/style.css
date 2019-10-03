@@ -16,7 +16,9 @@ a:visited {
   margin-left: 25px;
 }
 a:hover {
-  color: #11cbd7;
+  background: -webkit-linear-gradient(45deg, #11cbd7, #8f71ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .navbar {
   background-color: white;
@@ -55,7 +57,7 @@ section > div {
 /* home */
 #home {
   padding: 12% 21% 8%;
-  background: #11cbd7;
+  background-image: linear-gradient(45deg, #11cbd7, #8f71ff);
 }
 h1 {
   position: relative;
@@ -95,7 +97,9 @@ h2 {
     0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
 }
 .highlight a {
-  color: #11cbd7;
+  background: -webkit-linear-gradient(45deg, #11cbd7, #8f71ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* projects */
@@ -120,7 +124,7 @@ h2 {
 /* footer */
 footer {
   text-align: center;
-  background: #11cbd7;
+  background-image: linear-gradient(45deg, #11cbd7, #8f71ff);
   color: white;
   padding: 20px;
   box-shadow: 0 0.125rem 0.5rem rgba(131, 131, 131, 0.3),
@@ -167,7 +171,7 @@ h6 {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #11cbd7;
+    background-color: #62a5e9;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
