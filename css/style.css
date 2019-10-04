@@ -15,7 +15,7 @@ a:visited {
 .navbar-nav a:link {
   margin-left: 25px;
 }
-a:not(.button-a):hover {
+a:not(.button-a):not(.social-link):hover {
   background: -webkit-linear-gradient(45deg, #11cbd7, #8f71ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -156,6 +156,22 @@ h6 {
   width: 30px;
   margin-bottom: 20px;
 }
+a.social-link {
+  color: white;
+}
+a.social-link:active {
+  color: white;
+}
+a.social-link:hover {
+  color: white;
+}
+a.social-link:visited {
+  color: white;
+}
+svg {
+  width: 30px;
+  margin-bottom: 5px;
+}
 
 /* media queries */
 @media (min-width: 1680px) {
@@ -183,7 +199,7 @@ h6 {
     text-decoration: none;
     padding-bottom: 5px;
   }
-  a:not(.button-a):before {
+  a:not(.button-a):not(.social-link):before {
     content: "";
     position: absolute;
     width: 100%;
@@ -198,7 +214,7 @@ h6 {
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
   }
-  a:not(.button-a):hover:before {
+  a:not(.button-a):not(.social-link):not(.navbar-brand):hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);

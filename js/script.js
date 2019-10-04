@@ -39,7 +39,7 @@ $(document).ready(function() {
       0: {
         items: 1
       },
-      940: {
+      730: {
         items: 2
       },
       1680: {
