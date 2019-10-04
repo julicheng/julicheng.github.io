@@ -1,4 +1,10 @@
 $(document).ready(function() {
+  $(".nav-item").click(function() {
+    if ($(window).width() < 990) {
+      $(".fa-bars").click();
+    }
+  });
+
   var i = 0;
   var txt = `Hello 👋🏼, the name's Juli Cheng and I'm a front-end developer! 😃`;
   var speed = 70;
