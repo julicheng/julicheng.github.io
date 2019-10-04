@@ -5,9 +5,21 @@ $(document).ready(function() {
     }
   });
 
-  var i = 0;
-  var txt = `Hello 👋🏼, the name's Juli Cheng and I'm a front-end developer! 😃`;
-  var speed = 70;
+  // $(".project-inner").each(function() {
+  //   var max = 0;
+  //   $(this)
+  //     .find(".title")
+  //     .each(function() {
+  //       if ($(this).height() > max) max = $(this).height();
+  //     });
+
+  //   $(this)
+  //     .find(".title")
+  //     .css("height", max);
+  // });
+  let i = 0;
+  const txt = `Hello 👋🏼, the name's Juli Cheng and I'm a front-end developer! 😃`;
+  const speed = 70;
 
   function typeWriter() {
     if (i < txt.length) {
@@ -35,8 +47,26 @@ $(document).ready(function() {
       }
     }
   };
+
+  function projectHeightCalc() {
+    $(".project-inner").height("unset");
+    let tallest = 0;
+    $(".project-inner").each(function() {
+      console.log("hi" + $(this).innerHeight());
+      if ($(this).height() > tallest) {
+        tallest = $(this).height();
+        console.log($(this).height());
+      }
+    });
+    $(".project-inner").height(tallest);
+  }
+
+  $(".owl-carousel").owlCarousel(owlCarouselValues);
+
+  projectHeightCalc();
+
   $(window).resize(function() {
     $(".owl-carousel").owlCarousel(owlCarouselValues);
+    projectHeightCalc();
   });
-  $(".owl-carousel").owlCarousel(owlCarouselValues);
 });
