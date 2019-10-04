@@ -15,7 +15,7 @@ a:visited {
 .navbar-nav a:link {
   margin-left: 25px;
 }
-a:hover {
+a:not(.button-a):hover {
   background: -webkit-linear-gradient(45deg, #11cbd7, #8f71ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -50,9 +50,6 @@ section {
 section > div {
   margin: 0px 250px;
 }
-/* .section-title {
-  padding: 30px 0 20px 0;
-} */
 
 /* home */
 #home {
@@ -106,17 +103,40 @@ h2 {
 .project {
   margin: 8px;
 }
-
 .project img {
+  border-radius: 10px;
+  border: 2px solid white;
+  margin: 30px 0;
+}
+/* .project-title {
+  margin-top: 20px;
+} */
+.project-inner {
+  text-align: center;
+  background: linear-gradient(45deg, #11cbd7, #8f71ff);
+  padding: 40px 35px;
+  color: white;
   border-radius: 10px;
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3),
     0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
 }
-
-.project-title {
-  /* position: absolute; */
-  padding: 20px;
-  z-index: 9999;
+.buttons {
+  margin-top: 30px;
+}
+.project-button {
+  border-radius: 50px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 5px 15px;
+  margin-right: 10px;
+}
+.project-button:hover {
+  background: white;
+  color: #11cbd7;
+}
+.project-desc {
+  font-size: 16px;
 }
 
 /* contact */
@@ -164,7 +184,7 @@ h6 {
     text-decoration: none;
     padding-bottom: 5px;
   }
-  a:before {
+  a:not(.button-a):before {
     content: "";
     position: absolute;
     width: 100%;
@@ -179,7 +199,7 @@ h6 {
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
   }
-  a:hover:before {
+  a:not(.button-a):hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
