@@ -39,10 +39,10 @@ $(document).ready(function() {
       0: {
         items: 1
       },
-      600: {
+      940: {
         items: 2
       },
-      1000: {
+      1680: {
         items: 3
       }
     }
