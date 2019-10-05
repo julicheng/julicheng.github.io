@@ -6,6 +6,7 @@ p {
   font-size: 20px;
 }
 
+/* home page */
 /* nav */
 a:link,
 a:visited {
@@ -15,7 +16,7 @@ a:visited {
 .navbar-nav a:link {
   margin-left: 25px;
 }
-a:not(.button-a):not(.social-link):hover {
+a:not(.button-a):not(.social-link):not(.go-home):hover {
   background: -webkit-linear-gradient(45deg, #11cbd7, #8f71ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -231,6 +232,44 @@ svg {
   margin-bottom: 5px;
 }
 
+/* form success page */
+.success-page {
+  background: linear-gradient(45deg, #11cbd7, #8f71ff);
+  width: 100vw;
+  height: 100vh;
+  padding: 0 15px;
+}
+.success-page h1 {
+  margin: 15px 0;
+  width: fit-content;
+}
+.bubbles {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+.success-page h2 {
+  background: white;
+  width: fit-content;
+  border-radius: 50px;
+  margin-top: 15px;
+  padding: 0.5em 1em;
+  border: 2px solid white;
+  color: #8f71ff;
+  font-size: 30px;
+  box-shadow: 0 0.125rem 0.5rem rgba(131, 131, 131, 0.3),
+    0 0.0625rem 0.125rem rgba(114, 114, 114, 0.2);
+}
+.success-page h2:hover {
+  background: white;
+  color: #11cbd7;
+}
+.bubble-box {
+  display: flex;
+  justify-content: center;
+}
+
 /* media queries */
 @media (min-width: 1680px) {
   .navbar {
@@ -257,7 +296,7 @@ svg {
     text-decoration: none;
     padding-bottom: 5px;
   }
-  a:not(.button-a):not(.social-link):before {
+  a:not(.button-a):not(.social-link):not(.go-home):before {
     content: "";
     position: absolute;
     width: 100%;
@@ -272,7 +311,7 @@ svg {
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
   }
-  a:not(.button-a):not(.social-link):not(.navbar-brand):hover:before {
+  a:not(.button-a):not(.social-link):not(.navbar-brand):not(.go-home):hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);

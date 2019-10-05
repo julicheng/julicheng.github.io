@@ -22,10 +22,9 @@
       rel="stylesheet"
     />
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
   </head>
@@ -185,22 +184,23 @@
             <p>
               Drop me a message today and let's get talking! 😄
             </p>
-            <form name="contact" method="POST" action="/" data-netlify="true">
+            <form name="contact" method="POST" action="https://www.enformed.io/w8v3u6kc" accept-charset="UTF-8">
+              <input type="hidden" name="*redirect" value="https://julicheng.github.io/pages/success.html" />             
+              <input type="hidden" name="*honeypot" />
               <div class="top-inputs">
                 <div class="half-width">
                   <label for="name">Name</label>
                   <input type="text" name="name" required/>
                 </div>
                 <div class="half-width">
-                  <label for="email" required>Email</label>
-                  <input type="email" name="email" />
+                  <label for="email">Email</label>
+                  <input type="email" name="email" required/>
                 </div>
               </div>
               <div class="full-width">
-                <label for="message" required>Message</label>
-                <textarea name="message" id="" cols="40" rows="10"></textarea>
+                <label for="message">Message</label>
+                <textarea name="message" cols="40" rows="10" required></textarea>
               </div>               
-              <p class="form-success">Your message has been submitted successfully! Yippee! 🎉</p>
               <input class="submit" type="submit" value="Submit">
           </form>
           </div>
@@ -232,6 +232,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
