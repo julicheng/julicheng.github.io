@@ -129,6 +129,8 @@ h2 {
   padding: 5px 15px;
   margin-right: 10px;
   cursor: pointer;
+  box-shadow: 0 0.125rem 0.5rem rgba(131, 131, 131, 0.3),
+    0 0.0625rem 0.125rem rgba(114, 114, 114, 0.2);
 }
 .project-button:hover {
   background: white;
@@ -139,9 +141,60 @@ h2 {
 }
 
 /* contact */
+form {
+  margin: 0 10%;
+}
 #contact p {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
+}
+input:not(.submit),
+textarea {
+  padding: 22px 17px;
+  box-shadow: 0 0.125rem 0.5rem rgba(131, 131, 131, 0.3),
+    0 0.0625rem 0.125rem rgba(114, 114, 114, 0.2);
+  border-radius: 5px;
+  border: 2px solid lavender;
+}
+input:not(.submit) {
+  height: 40px;
+  margin-bottom: 25px;
+}
+
+.half-width {
+  display: flex;
+  flex-direction: column;
+  width: 49%;
+}
+.full-width {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.top-inputs {
+  display: flex;
+  justify-content: space-between;
+}
+label {
+  font-size: 20px;
+}
+.submit {
+  display: flex;
+  margin: 30px auto;
+  border-radius: 50px;
+  background: -webkit-linear-gradient(45deg, #11cbd7, #8f71ff);
+  padding: 10px 25px;
+  font-size: 20px;
+  color: white;
+  box-shadow: 0 0.125rem 0.5rem rgba(131, 131, 131, 0.3),
+    0 0.0625rem 0.125rem rgba(114, 114, 114, 0.2);
+  border: 2px solid transparent;
+  background-origin: border-box;
+}
+.submit:hover {
+  background: white;
+  color: #11cbd7;
+  border: 2px solid #11cbd7;
 }
 
 /* footer */
@@ -234,6 +287,17 @@ svg {
   .navbar-expand-lg .navbar-nav .nav-link {
     margin-left: 0;
     padding: 10px 0;
+  }
+}
+@media (max-width: 655px) {
+  .half-width {
+    width: 100%;
+  }
+  .top-inputs {
+    flex-direction: column;
+  }
+  form {
+    margin: 0 3%;
   }
 }
 

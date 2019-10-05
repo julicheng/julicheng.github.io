@@ -183,16 +183,25 @@
           <div class="section-title">
             <h2>Contact</h2>
             <p>
-              Let's start a conversation today 😄! You can reach me on
-              <span class="highlight"
-                ><a href="mailto:94julicheng@gmail.com"
-                  >94julicheng@gmail.com</a
-                >.</span
-              >
+              Drop me a message today and let's get talking! 😄
             </p>
-            <!-- <input type="text" name="name" />
-            <input type="email" name="email" />
-            <textarea name="message" id="" cols="30" rows="10"></textarea> -->
+            <form name="contact" method="POST" data-netlify="true">
+              <div class="top-inputs">
+                <div class="half-width">
+                  <label for="name">Name</label>
+                  <input type="text" name="name" required/>
+                </div>
+                <div class="half-width">
+                  <label for="email" required>Email</label>
+                  <input type="email" name="email" />
+                </div>
+              </div>
+              <div class="full-width">
+                <label for="message" required>Message</label>
+                <textarea name="message" id="" cols="40" rows="10"></textarea>
+              </div>               
+              <input class="submit" type="submit" value="Submit">
+          </form>
           </div>
         </div>
       </div>
