@@ -223,9 +223,17 @@ svg {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
-
   .navbar-brand:hover:before {
     visibility: hidden;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin-left: 0;
+    padding: 10px 0;
   }
 }
 
