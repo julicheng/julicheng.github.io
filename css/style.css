@@ -242,6 +242,18 @@ svg {
 .success-page h1 {
   margin: 15px 0;
   width: fit-content;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  font-size: 30px;
+}
+.success-page h1:first-of-type {
+  animation-delay: 300ms;
+}
+.success-page h1:nth-of-type(2) {
+  animation-delay: 1s;
+}
+.success-page h1:nth-of-type(3) {
+  animation-delay: 1.8s;
 }
 .bubbles {
   display: flex;
@@ -253,13 +265,16 @@ svg {
   background: white;
   width: fit-content;
   border-radius: 50px;
-  margin-top: 15px;
+  margin-top: 30px;
   padding: 0.5em 1em;
   border: 2px solid white;
   color: #8f71ff;
   font-size: 30px;
   box-shadow: 0 0.125rem 0.5rem rgba(131, 131, 131, 0.3),
     0 0.0625rem 0.125rem rgba(114, 114, 114, 0.2);
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 2.6s;
 }
 .success-page h2:hover {
   background: white;
@@ -280,7 +295,9 @@ svg {
   #home {
     padding: 20% 19% 8%;
   }
-  h1 {
+  h1,
+  .success-page h1,
+  .success-page h2 {
     font-size: 1.5em;
   }
 }
