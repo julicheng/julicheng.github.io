@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   let i = 0;
   const txt = `Hello 👋🏼, the name's Juli Cheng and I'm a front-end developer! 😃`;
-  const speed = 70;
+  const speed = 120;
 
   function typeWriter() {
     if (i < txt.length) {
@@ -17,7 +17,7 @@ $(document).ready(function() {
     }
   }
 
-  typeWriter();
+  setInterval(typeWriter, 1000);
 
   let owlCarouselValues = {
     loop: true,
@@ -54,5 +54,11 @@ $(document).ready(function() {
   $(window).resize(function() {
     $(".owl-carousel").owlCarousel(owlCarouselValues);
     projectHeightCalc();
+  });
+
+  $(".project").tilt({
+    maxTilt: 3,
+    glare: true,
+    maxGlare: 0.2
   });
 });
