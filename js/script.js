@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   let i = 0;
   const txt = `Hello 👋🏼, the name's Juli Cheng and I'm a front-end developer! 😃`;
-  const speed = 120;
+  const speed = 100;
 
   function typeWriter() {
     if (i < txt.length) {
