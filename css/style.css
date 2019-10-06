@@ -73,15 +73,13 @@ h1 {
     0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
   box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.3),
     0 0.0625rem 0.125rem rgba(0, 0, 0, 0.2);
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
   -webkit-animation-delay: 100ms;
   animation-delay: 100ms;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  -webkit-animation: bounceInUp 1s;
+  animation: bounceInUp 1s;
 }
 h1::before {
   content: "";
@@ -95,14 +93,16 @@ h1::before {
   border-top-color: #fff;
 }
 .female-technologist {
-  -webkit-animation-fill-mode: both;
+  /* -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-delay: 100ms;
-  animation-delay: 100ms;
-  -webkit-animation-iteration-count: 5;
-  animation-iteration-count: 5;
+  animation-duration: 1s; */
+  /* -webkit-animation-delay: 100ms;
+  animation-delay: 100ms; */
+  /* -webkit-animation-iteration-count: 5;
+  animation-iteration-count: 5; */
+  -webkit-animation: pulse 1s 5;
+  animation: pulse 1s 5;
 }
 
 /* about */
@@ -341,7 +341,7 @@ svg {
   margin-top: 30px;
   padding: 0.5em 1em;
   border: 2px solid white;
-  color: #8f71ff;
+  color: #11cbd7;
   font-size: 30px;
   -webkit-box-shadow: 0 0.125rem 0.5rem rgba(131, 131, 131, 0.3),
     0 0.0625rem 0.125rem rgba(114, 114, 114, 0.2);
@@ -356,7 +356,7 @@ svg {
 }
 .success-page h2:hover {
   background: white;
-  color: #11cbd7;
+  color: #8f71ff;
 }
 .bubble-box {
   display: -webkit-box;
@@ -453,8 +453,27 @@ svg {
   display: -ms-flexbox;
   display: flex;
 }
-
 .owl-carousel .owl-item .project {
   width: auto;
   height: 100%;
+}
+.example {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(white),
+    to(black)
+  );
+  background: -o-linear-gradient(top, white, black);
+  background: linear-gradient(to bottom, white, black);
 }

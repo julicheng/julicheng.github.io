@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   let i = 0;
   const txt = `Hello 👋🏼, the name's Juli Cheng and I'm a front-end developer! 😃`;
-  const speed = 100;
+  const speed = 150;
 
   function typeWriter() {
     if (i < txt.length) {
@@ -60,5 +60,11 @@ $(document).ready(function() {
     maxTilt: 3,
     glare: true,
     maxGlare: 0.2
+  });
+  $("h1").tilt({
+    maxTilt: 8
+  });
+  $(".female-technologist").tilt({
+    maxTilt: 20
   });
 });
